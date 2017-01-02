@@ -1,6 +1,6 @@
 {
   "name": "fis3-postpackager-arrow-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于fis3-arrow的静态资源前端加载器",
   "main": "index.js",
   "scripts": {

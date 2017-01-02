@@ -73,7 +73,6 @@ function buildResourceMap(ret) {
                     if (replaceStr) {
                         content = content.replace(replaceStr, "<script>require.resourceMap(" + JSON.stringify(resourceMap) + ")<\/script>" + replaceStr)
                         vm && (vm['_content'] = content);
-                        fs.writeFileSync('./ret.js', content);
                     }
                 }
             }
