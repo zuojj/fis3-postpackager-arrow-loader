@@ -1,0 +1,24 @@
+{
+  "name": "fis3-postpackager-arrow-loader",
+  "version": "1.0.0",
+  "description": "基于fis3-arrow的静态资源前端加载器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuojj/fis3-postpackager-arrow-loader.git"
+  },
+  "keywords": [
+    "fis3-arrow",
+    "jello",
+    "loader"
+  ],
+  "author": "zuojj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuojj/fis3-postpackager-arrow-loader/issues"
+  },
+  "homepage": "https://github.com/zuojj/fis3-postpackager-arrow-loader#readme"
+}
