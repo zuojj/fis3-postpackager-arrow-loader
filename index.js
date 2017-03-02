@@ -26,7 +26,7 @@ function buildResourceMap(ret) {
 
     if (res) {
         for (let key in res) {
-            if (/index\.vm/.test(key)) {
+            if (/\.vm$/.test(key)) {
                 let item = res[key],
                     uri  = item.uri,
                     syncDeps = item.deps,
@@ -44,11 +44,11 @@ function buildResourceMap(ret) {
                     filterDeps(asyncDeps);
                     moduleId = res[asyncDeps[0]].extras.moduleId;
 
-                    let vm = ret['src'] && ret['src'][uri],
+                    let vm = ret['src'] && ret['src'][/^\//.test(key) ? key : ('/' + key)],
                         content = vm && vm['_content'] || '';
 
                     let replaceStr = '';
-
+                    
                     // 获取placeholder position
                     content.replace(scriptRegExp, function(all, attrs, content) {
                         if (content && content.indexOf(moduleId) >= 0) {
