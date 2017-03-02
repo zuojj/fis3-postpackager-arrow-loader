@@ -45,7 +45,7 @@ function buildResourceMap(ret) {
                     moduleId = res[asyncDeps[0]].extras.moduleId;
 
                     let vm = ret['src'] && ret['src'][uri],
-                        content = vm && vm['_content'];
+                        content = vm && vm['_content'] || '';
 
                     let replaceStr = '';
 
